@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Home</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB CSS -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Halfmoon CSS -->
+  <link href="DMcss/halfmoon-variables.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/Home.css">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#26308b; opacity: 70%;">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img src="Images/anime-logo.png" height="50" alt="LOGO" loading="lazy" />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="Home.html">Newsfeed</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tournaments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Games</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        
+        <button class="btn btn-sm me-2" type="button" onclick="halfmoon.toggleDarkMode()">Dark mode</button>
+        
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+
+        <!-- Notifications -->
+        <div class="dropdown">
+          <button class="text-reset dropbtn fas fa-bell"></button>
+          <div class="dropdown-content">
+          <a href="#">Some Notifications</a>
+          <a href="#">Some Notifications</a>
+          <a href="#">Some Notifications</a>
+          </div>
+        </div>
+        
+        <!-- Avatar -->
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img
+            src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+            class="rounded-circle"
+            height="25"
+            alt=""
+            loading="lazy"
+            />
+          </button>
+          <div class="dropdown-content">
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="Login.html">Log Out</a>
+          </div>
+        </div>
+
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar End-->
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <!-- NewsFeed Start -->
+    <div class="col-md-7">
+      <div class="section newsfeed my-5">
+        <!-- Post 1 -->
+        <div class="post">
+          <div class="card">
+            <div class="car-body">
+              <div class="container">
+                <!-- Author and Options -->
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="d-flex story">
+                      <img src="Images/anime-pfp.jpg" class="rounded-circle" height="40" alt="Avatar">
+                      <div class="mt-2">
+                        <strong class="mt-5 ms-2">Ahmad</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <i class="fas fa-ellipsis-h fa-lf mt-2 float-end"></i>
+                  </div>
+                </div>
+
+              </div>
+              <br>
+              <!-- Content -->
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded-0" data-mdb-ripple-color="light">
+                <img src="Images/anime-gun.jpg" style="width: 100%;"/>
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                </a>
+              </div>
+
+              <!-- User Interactions -->
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <i class="far fa-heart fa-lg ms-0"></i>
+                      <i class="far fa-comment fa-lg mx-2"></i>
+                      <i class="fas fa-share fa-lg"></i>
+                    </div>
+                  </div>
+
+                  <!-- Liked By -->
+                  <div class="row">
+                    <div class="col-md-8 mt-1">
+                      <img src="Images/anime-pfp.jpg" class="rounded-circle" height="20" alt="Avatar">
+                      <small>Liked by <strong>Hasnat</strong> and <strong>100</strong> others</small>
+                    </div>
+                  </div>
+
+                  <!-- Description -->
+                  <div class="row">
+                    <div class="col-md-12 mt-1">
+                      <p>
+                        <strong >
+                          Ahmad
+                        </strong>
+                        Some text about the picture shared or your story. Anything the user types would be shown here so
+                        that the player can share their experience and tell the world
+                        about their story. Some text about the picture shared or your... <small class="my-1">
+                          more</small>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Comments -->
+                  <div class="row">
+                    <small class="my-1">View All Comments</small>
+                    <p class="mb-0"><strong >Hasnat</strong> Wow...great picture loser. Git
+                      Goooodd...HAHAHAAHH</p>
+                    <p class="mb-0"><strong >PussySlayer69</strong> I fucked ur mum last night lad
+                      while u were getting wrecked in league</p>
+                    <small class="my-1">10 Hours Ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!-- Post 2 -->
+        <div class="post">
+          <div class="card">
+            <div class="car-body">
+              <div class="container">
+                <!-- Author and Options -->
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="d-flex story">
+                      <img src="Images/anime-pfp.jpg" class="rounded-circle" height="40" alt="Avatar">
+                      <div class="mt-2">
+                        <strong class="mt-5 ms-2">Ahmad</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <i class="fas fa-ellipsis-h fa-lf mt-2 float-end"></i>
+                  </div>
+                </div>
+
+              </div>
+              <br>
+              <!-- Content -->
+              <div class="bg-image hover-overlay ripple shadow-1-strong rounded-0" data-mdb-ripple-color="light">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/nuX8H4pvGm4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <div class="container">
+
+                  <!-- User Interactions -->
+                  <div class="row">
+                    <div class="col-md-8">
+                      <i class="far fa-heart fa-lg ms-0"></i>
+                      <i class="far fa-comment fa-lg mx-2"></i>
+                      <i class="fas fa-share fa-lg"></i>
+                    </div>
+                  </div>
+
+                  <!-- Liked By -->
+                  <div class="row">
+                    <div class="col-md-8 mt-1">
+                      <img src="Images/anime-pfp.jpg" class="rounded-circle" height="20" alt="Avatar">
+                      <small>Liked by <strong>Hasnat</strong> and <strong>100</strong> others</small>
+                    </div>
+                  </div>
+
+                  <!-- Description -->
+                  <div class="row">
+                    <div class="col-md-12 mt-1">
+                      <p>
+                        <strong>
+                          Ahmad
+                        </strong>
+                        Some text about the picture shared or your story. Anything the user types would be shown here so
+                        that the player can share their experience and tell the world
+                        about their story. Some text about the picture shared or your... <small class="my-1">
+                          more</small>
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Comments -->
+                  <div class="row">
+                    <small class="my-1">View All Comments</small>
+                    <p class="mb-0"><strong>Hasnat</strong> Wow...great picture loser. Git
+                      Goooodd...HAHAHAAHH</p>
+                    <p class="mb-0"><strong>PussySlayer69</strong> I fucked ur mum last night lad
+                      while u were getting wrecked in league</p>
+                    <small class="my-1">10 Hours Ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <!-- Suggested Start -->
+    <div class="col-md-3 d-md-none d-lg-block ms-0" style="z-index: -1;">
+      <section class="my-6 card ps-3 pe-3">
+
+        <!-- Player -->
+        <div class="row">
+          <div class="col-md-3">
+            <img src="Images/anime-pfp.jpg" class="rounded-circle mt-3" height="60" alt="Avatar">
+          </div>
+          <div class="col-md-9 ps-0">
+            <ul class="ms-0 ps-0 list-unstyled">
+              <li>
+                <p>
+                <p class="ms-3">
+                  <strong>Ahmad</strong>
+                </p>
+                </p>
+              </li>
+              <li>
+                <span class="ms-3">
+                  Chicken Wings
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Suggestions -->
+        <div>
+          <small>
+            Suggestions For You
+          </small>
+          <span class="float-end">See All</span>
+        </div>
+        <!-- Suggestion 1 -->
+        <div class="row">
+          <div class="col-md-2">
+            <img src="Images/anime-pfp.jpg" class="rounded-circle mt-2" height="45" alt="Avatar">
+          </div>
+          <div class="col-md-7 mt-2">
+            <ul class="ms-0 ps-0 list-unstyled">
+              <li>
+                <small class="username"><strong>PussySlayer69</strong></small>
+              </li>
+              <li>
+                <span class="user-name">Followed by Hasnat + 23 more</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mt-4">
+            <a href="#">Follow</a>
+          </div>
+        </div>
+        <!-- Suggestion 2 -->
+        <div class="row">
+          <div class="col-md-2">
+            <img src="Images/anime-pfp.jpg" class="rounded-circle mt-2" height="45" alt="Avatar">
+          </div>
+          <div class="col-md-7 mt-2">
+            <ul class="ms-0 ps-0 list-unstyled">
+              <li>
+                <small class="username"><strong>Hasnat</strong></small>
+              </li>
+              <li>
+                <span class="user-name">Followed by PussySlayer69 + 18 more</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mt-4">
+            <a href="#">Follow</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+  <!-- LOADER -->
+  <!-- <div class="loader-wrapper elementToAnimate" style="transition: 1s;">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div> -->
+
+  <script>
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Halfmoon JS -->
+  <script src="DMjs/halfmoon.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</body>
+
+</html>

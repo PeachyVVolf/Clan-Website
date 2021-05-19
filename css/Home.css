@@ -1,0 +1,158 @@
+
+
+.loader-wrapper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: rgb(122, 215, 243); */
+  background-image: url("../Images/anime-gun-dark.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  /* top: -25%; */
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+}
+
+@keyframes yourAnimation {
+    0.0%{
+        top: 0;
+        transform: translate(0px, 1080px) scale(50);
+        transform-origin: top left;
+    }
+    100%{
+        top: 0;
+        transform: translate(0px, 0px) scale(50);
+        transform-origin: top left;
+    }
+    37.0%{
+        top: 0;
+        transform: translate(0px, 0px) scale(50);
+        transform-origin: top left;
+    }
+}
+
+.elementToAnimate{
+    animation: yourAnimation 2s ease 0s normal none;
+}
+
+.user-name{
+  font-size: 12px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  box-shadow: 20px 20px 40px 10px plum, -20px -20px 40px 10px rgb(82, 156, 240);
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.navbar.light-mode {
+  box-shadow: 20px 20px 40px 10px plum;
+}
+
+.navbar.dark-mode {
+  box-shadow: 20px 20px 40px 10px rgb(82, 156, 240);
+}
