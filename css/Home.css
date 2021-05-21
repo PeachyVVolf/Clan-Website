@@ -1,21 +1,3 @@
-:root{
-  --primary:#27283a;
-  --background:rgb(34, 38, 46);
-  --background-2:rgb(46, 53, 66);
-  --text-color:white;
-  --shadow-1: 0px 0px 20px 0px rgb(67, 77, 95);
-}
-
-body{
-  background-color:var(--background);
-  overflow-x: hidden;
-}
-
-*{
-  padding:0px;
-  margin:0px;
-  color:var(--text-color);
-}
 .card{
   background-color:var(--background-2);
   box-shadow:var(--shadow-1);
@@ -23,6 +5,10 @@ body{
 }
 .mobileMenu .nav-link{
   color: var(--text-color)!important;
+  background-color: none!important;
+}
+.mobileMenu .nav-link:hover{
+  background-color: var(--background)!important;
 }
 .StickyNav {
   position: -webkit-sticky;
@@ -38,18 +24,6 @@ div.rainbow{
   padding:10px 0px;
   font-size:16px;
   animation: rainbow 15s infinite linear;
-}
-
-@keyframes rainbow {
-  0% {
-    background-position:0% 90%;
-  }
-  50% {
-    background-position:100% 19%;
-  }
-  100% {
-    background-position:0% 90%;
-  }
 }
 
 .loader-wrapper{
@@ -82,68 +56,6 @@ div.rainbow{
   width: 100%;
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
-}
-
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  
-  25% {
-    transform: rotate(180deg);
-  }
-  
-  50% {
-    transform: rotate(180deg);
-  }
-  
-  75% {
-    transform: rotate(360deg);
-  }
-  
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes loader-inner {
-  0% {
-    height: 0%;
-  }
-  
-  25% {
-    height: 0%;
-  }
-  
-  50% {
-    height: 100%;
-  }
-  
-  75% {
-    height: 100%;
-  }
-  
-  100% {
-    height: 0%;
-  }
-}
-
-@keyframes yourAnimation {
-    0.0%{
-        top: 0;
-        transform: translate(0px, 1080px) scale(50);
-        transform-origin: top left;
-    }
-    100%{
-        top: 0;
-        transform: translate(0px, 0px) scale(50);
-        transform-origin: top left;
-    }
-    37.0%{
-        top: 0;
-        transform: translate(0px, 0px) scale(50);
-        transform-origin: top left;
-    }
 }
 
 .elementToAnimate{
