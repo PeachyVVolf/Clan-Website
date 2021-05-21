@@ -15,11 +15,11 @@ body {
   padding: 0px;
   margin: 0px;
   color: var(--text-color);
-  transition: all 0.35s ease;
+  transition: all 0.2s ease;
 }
 
 *:hover {
-  transition: all 0.35s ease;
+  transition: all 0.2s ease;
 }
 
 .card{
