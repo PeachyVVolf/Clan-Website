@@ -19,82 +19,97 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#161d5e; opacity: 80%;">
-    <!-- Container wrapper -->
-    <div class="container">
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
+  <!-- NavBar Start -->
+  <nav class="navbar navbar-expand-sm navbar-dark Fixed" style="background-color: #27283a !important;">
+    <div class="container d-flex justify-content-between">
+      <!-- Left elements -->
+      <div class="d-flex align-items-center">
+        <button 
+        style="color:white; font-size:16px;" 
+        class="navbar-toggler" 
+        type="button" 
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarToggleExternalContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
 
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Navbar brand -->
-        <a class="navbar-brand mt-2 mt-lg-0" href="#">
-          <img src="Images/anime-logo.png" height="50" alt="LOGO" loading="lazy" />
-        </a>
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="Home.html">Newsfeed</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tournaments</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Games</a>
-          </li>
-        </ul>
-        <!-- Left links -->
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse">
+          <a class="navbar-brand mt-2 mt-lg-0" href="#"><img src="Images/anime-logo.png" height="50" alt="LOGO"
+              loading="lazy" /></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Feed</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tournaments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Games</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Collapsible wrapper -->
       </div>
-      <!-- Collapsible wrapper -->
-
+      <!-- Left elements END -->
       <!-- Right elements -->
       <div class="d-flex align-items-center">
         <!-- Icon -->
-        
+
         <!-- <button class="btn btn-sm me-2" type="button" onclick="halfmoon.toggleDarkMode()"><i class="bi bi-moon-stars-fill"></i></button> -->
-        
-        <a class="text-reset me-3" href="#">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
+        <div style="padding:16px;">
+          <a href="#">
+            <span style="color:#fff"><i class="text-reset fas fa-shopping-cart"></i></span>
+          </a>
+        </div>
 
         <!-- Notifications -->
         <div class="dropdown">
-          <button class="text-reset dropbtn fas fa-bell"></button>
+          <span style="color:#fff"><i class="text-reset dropbtn fas fa-bell"></i></span>
           <div class="dropdown-content">
-          <a href="#">Some Notifications</a>
-          <a href="#">Some Notifications</a>
-          <a href="#">Some Notifications</a>
+            <a href="#">Some Notifications</a>
+            <a href="#">Some Notifications</a>
+            <a href="#">Some Notifications</a>
           </div>
         </div>
-        
+
         <!-- Avatar -->
         <div class="dropdown">
           <button class="dropbtn">
-            <img
-            src="https://mdbootstrap.com/img/new/avatars/2.jpg"
-            class="rounded-circle"
-            height="25"
-            alt=""
-            loading="lazy"
-            />
+            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25" alt=""
+              loading="lazy" />
           </button>
           <div class="dropdown-content">
-          <a href="#">Profile</a>
-          <a href="#">Settings</a>
-          <a href="Login.html">Log Out</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="Login.html">Log Out</a>
           </div>
         </div>
-
-      <!-- Right elements -->
+        <!-- Right elements End-->
+      </div>
     </div>
-    <!-- Container wrapper -->
   </nav>
-  <!-- Navbar End-->
-
+  <!-- Mobile Collapse Menu -->
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <ul class="nav mobileMenu flex-column me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Feed</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tournaments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Games</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Mobile Collapse Menu End -->
+  <!-- Nav Bar End -->
   <div class="row">
     <div class="col-md-1"></div>
     <!-- NewsFeed Start -->
@@ -124,7 +139,7 @@
               <br>
               <!-- Content -->
               <div class="bg-image hover-overlay ripple shadow-1-strong rounded-0" data-mdb-ripple-color="light">
-                <img src="Images/anime-gun.jpg" style="width: 100%;"/>
+                <img src="Images/anime-gun.jpg" style="width: 100%;" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
                 </a>
@@ -153,7 +168,7 @@
                   <div class="row">
                     <div class="col-md-12 mt-1">
                       <p>
-                        <strong >
+                        <strong>
                           Ahmad
                         </strong>
                         Some text about the picture shared or your story. Anything the user types would be shown here so
@@ -167,9 +182,9 @@
                   <!-- Comments -->
                   <div class="row">
                     <small class="my-1">View All Comments</small>
-                    <p class="mb-0"><strong >Hasnat</strong> Wow...great picture loser. Git
+                    <p class="mb-0"><strong>Hasnat</strong> Wow...great picture loser. Git
                       Goooodd...HAHAHAAHH</p>
-                    <p class="mb-0"><strong >PussySlayer69</strong> I fucked ur mum last night lad
+                    <p class="mb-0"><strong>PussySlayer69</strong> I fucked ur mum last night lad
                       while u were getting wrecked in league</p>
                     <small class="my-1">10 Hours Ago</small>
                   </div>

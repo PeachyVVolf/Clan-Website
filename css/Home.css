@@ -1,4 +1,13 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+.mobileMenu .nav-link{
+  color: white!important;
+}
+.Fixed{
 
+}
 
 .loader-wrapper{
   width: 100%;
@@ -136,7 +145,7 @@
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-  box-shadow: 20px 20px 40px 10px plum, -20px -20px 40px 10px rgb(82, 156, 240);
+  box-shadow: 20px 20px 30px 0px plum, -20px -20px 30px 0px rgb(82, 156, 240);
   border-radius: 5px;
 }
 
@@ -147,12 +156,4 @@
 
 .dropdown:hover .dropbtn {
   background-color: transparent;
-}
-
-.navbar.light-mode {
-  box-shadow: 20px 20px 40px 10px plum;
-}
-
-.navbar.dark-mode {
-  box-shadow: 20px 20px 40px 10px rgb(82, 156, 240);
 }
