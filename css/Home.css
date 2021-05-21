@@ -5,8 +5,37 @@
 .mobileMenu .nav-link{
   color: white!important;
 }
-.Fixed{
+.StickyNav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index:1000;
+}
+div.banner{
+  text-align: center;
+  background-color:#000000;
+  color:white;
+  padding:10px 0px;
+  font-size:16px;
+  animation: backgroundColorRotate 10s linear 0s infinite;
+}
 
+@keyframes backgroundColorRotate {
+  from {
+    background-color: #6666ff;
+  }
+  10% {
+    background-color: #007acc;
+  }
+  50% {
+    background-color: #005e00;
+  }
+  75% {
+    background-color: #ff3399;
+  }
+  100% {
+    background-color: #6666ff;
+  }
 }
 
 .loader-wrapper{
@@ -156,4 +185,13 @@
 
 .dropdown:hover .dropbtn {
   background-color: transparent;
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+  div.banner{
+    font-size:12px;
+  }
+  .StickyNav {
+    position: relative;
+  }
 }
