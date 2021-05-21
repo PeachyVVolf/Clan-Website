@@ -11,30 +11,25 @@
   top: 0;
   z-index:1000;
 }
-div.banner{
+div.rainbow{
   text-align: center;
-  background-color:#000000;
+  background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgb(201, 154, 0) 20%, rgb(133, 148, 0) 40%, rgb(0, 141, 42) 60%, rgb(0, 133, 182) 80%, rgba(180,58,58,1) 100%);
   color:white;
+  background-size: 500% 500%;
   padding:10px 0px;
   font-size:16px;
-  animation: backgroundColorRotate 10s linear 0s infinite;
+  animation: rainbow 15s infinite linear;
 }
 
-@keyframes backgroundColorRotate {
-  from {
-    background-color: #6666ff;
-  }
-  10% {
-    background-color: #007acc;
+@keyframes rainbow {
+  0% {
+    background-position:0% 90%;
   }
   50% {
-    background-color: #005e00;
-  }
-  75% {
-    background-color: #ff3399;
+    background-position:100% 19%;
   }
   100% {
-    background-color: #6666ff;
+    background-position:0% 90%;
   }
 }
 
