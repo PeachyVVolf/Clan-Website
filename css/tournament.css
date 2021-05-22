@@ -1,0 +1,28 @@
+.Pagetitle{
+    background-color:transparent;
+    background-image: url("../Images/game_room_bg.webp");
+    background-size: cover;
+    height:30vh;
+    background-position: bottom center;
+}
+
+.centered{
+    position:relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.TitleName{
+    text-align: center;
+    font-weight: 700;
+    animation: pulseTextShadow 2s infinite linear;
+    -webkit-animation: pulseTextShadow 2s infinite linear;
+}
+.gameCard{
+    padding-bottom:0px;
+}
+.gameCard img{
+    background-color: var(--background);
+    border-radius: 20px;
+    margin-bottom:10px;
+}

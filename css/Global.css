@@ -103,6 +103,34 @@ div.rainbow{
   animation: rainbow 15s infinite linear;
 }
 
+.CardsContainer{
+  margin-top: 50px;
+  padding-bottom:50px;
+}
+
+.CardsContainer .container{
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.SingleCard{
+  margin:20px;
+  flex-basis: 29.1%;
+}
+
+
+@keyframes pulseTextShadow {
+  0%{
+      text-shadow: 0px 0px 50px rgb(247, 0, 255);
+  }
+  50%{
+      text-shadow: 0px 0px 10px rgb(255, 0, 255);
+  }
+  100%{
+      text-shadow: 0px 0px 50px rgb(247, 0, 255);
+  }
+}
+
 @keyframes rainbow {
   0% {
     background-position:0% 90%;
@@ -175,4 +203,10 @@ div.rainbow{
         transform: translate(0px, 0px) scale(50);
         transform-origin: top left;
     }
+}
+
+@media (min-width: 200px) and (max-width:600px){
+  h1{
+    font-size:35px;
+  }
 }
