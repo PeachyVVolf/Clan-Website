@@ -5,16 +5,13 @@
     height:30vh;
     background-position: bottom center;
 }
-
-.centered{
-    position:relative;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
 .TitleName{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
+    height:30vh;
+    backdrop-filter: blur(2px);
     animation: pulseTextShadow 2s infinite linear;
     -webkit-animation: pulseTextShadow 2s infinite linear;
 }
