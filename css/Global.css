@@ -1,9 +1,12 @@
 :root {
   --primary: #27283a;
+  --secondary: #2d2f3b;
+  --purples:rgb(148, 0, 141);
   --background: rgb(34, 38, 46);
   --background-2: rgb(46, 53, 66);
   --text-color: white;
   --shadow-1: 0px 0px 20px 0px rgb(67, 77, 95);
+  --shadow-1-hover: 0px 0px 20px 0px rgb(89, 100, 121);
 }
 
 body {
@@ -18,6 +21,10 @@ body {
   transition: all 0.2s ease;
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 *:hover {
   transition: all 0.2s ease;
 }
@@ -26,6 +33,27 @@ body {
   background-color:var(--background-2);
   box-shadow:var(--shadow-1);
   border:none;
+  top:0px;
+}
+
+.card:hover{
+  top:-10px;
+  box-shadow: var(--shadow-1-hover);
+}
+
+.SpecialHeading{
+  background-color:var(--primary);
+  margin-top: 0px;
+  padding:20px;
+  text-align: center;
+  animation: pulseTextShadow 10s linear infinite;
+  -webkit-animation: pulseTextShadow 10s linea;
+}
+
+.SpecialHeading:before, .SpecialHeading:after{
+  content:"--";
+  animation: pulseTextShadow 10s linear infinite;
+  -webkit-animation: pulseTextShadow 10s linea;
 }
 
 .mobileMenu .nav-link{
@@ -118,16 +146,44 @@ div.rainbow{
   flex-basis: 29.1%;
 }
 
+.Pagetitle{
+  background-color:transparent;
+  background-image: url("../Images/game_room_bg.webp");
+  background-size: cover;
+  height:30vh;
+  background-position: bottom center;
+}
+
+.Pagetitle2{
+  background-color:transparent;
+  background-image: url("../Images/game_room_bg.webp");
+  background-size: contain;
+  height:30vh;
+  background-position: center center;
+}
+
+.TitleName{
+  margin:0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-align: center;
+  height:30vh;
+  backdrop-filter: blur(2px);
+  animation: pulseTextShadow 2s infinite linear;
+  -webkit-animation: pulseTextShadow 2s infinite linear;
+}
 
 @keyframes pulseTextShadow {
   0%{
-      text-shadow: 0px 0px 50px rgb(247, 0, 255);
+      text-shadow: 0px 0px 50px rgb(255, 0, 149);
   }
   50%{
       text-shadow: 0px 0px 10px rgb(255, 0, 255);
   }
   100%{
-      text-shadow: 0px 0px 50px rgb(247, 0, 255);
+      text-shadow: 0px 0px 50px rgb(255, 0, 149);
   }
 }
 
