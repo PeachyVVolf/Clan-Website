@@ -10,6 +10,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
 <!-- Global CSS -->
 <link rel="stylesheet" href="css/Global.css">
+
+<script>
+    function resizeColumn() {
+        width = window.outerWidth;
+        if (width > 496) {
+            document.querySelector(".login-column").classList.remove('scale2X');
+        } else {
+            document.querySelector(".login-column").classList.add('scale2X');
+        }
+    }
+    window.onload = () => {
+        resizeColumn();
+    }
+    window.onresize = () => {
+        resizeColumn();
+    }
+</script>
+
 </head>
 <body>
 
@@ -30,16 +48,6 @@
             </div>
         </div>
     </section>
-    <script>
-        window.onresize = () => {
-            width = window.outerWidth;
-            if (width > 496) {
-                document.querySelector(".login-column").classList.remove('scale2X');
-            } else {
-                document.querySelector(".login-column").classList.add('scale2X');
-            }
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+.Brackets {
+  background-image: url("https://media.istockphoto.com/vectors/digital-technology-gaming-abstract-background-vector-id1164222265?k=6&m=1164222265&s=170667a&w=0&h=ixQIWmB43PjPjgXSuxMdhLkV-V245Q8EZ_MmcLUOsOk=");
+  background-size: auto;
+  height: 100vh;
+  background-position: center center;
+  background-color: var(--background);
+  animation: scrollLeft 10s linear infinite;
+  -webkit-animation: scrollLeft 2000s linear infinite;
+}
+.bracketContent {
+  height: 100%;
+  backdrop-filter: blur(5px);
+  padding: 50px;
+}
+
+@keyframes scrollLeft {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0px 150000px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .bracketContent {
+    padding: 15px;
+  }
+}

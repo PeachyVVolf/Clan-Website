@@ -112,81 +112,113 @@
   <div class="row">
     <div class="col-md-1"></div>
     <!-- NewsFeed Start -->
-    <div class="col-md-7">
+    <div class="col-lg-7 col-md-10">
       <div class="section newsfeed my-5">
+        <div class="UploadForm card">
+          <div class="widget-post" aria-labelledby="post-header-title">
+            <div class="widget-post__header">
+              <h2 class="widget-post__title" id="post-header-title">
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                Post
+              </h2>
+            </div>
+            <form id="widget-form" class="widget-post__form" name="form" aria-label="post widget">
+              <div class="widget-post__content">
+                <label for="post-content" class="sr-only">Share</label>
+                <textarea name="post" id="post-content" class="widget-post__textarea scroller"
+                  placeholder="Type Something ...."></textarea>
+              </div>
+              <div class="widget-post__options is--hidden" id="stock-options">
+              </div>
+              <div class="widget-post__actions post--actions">
+                <div class="post-actions__attachments">
+                  <button type="button" class="btn post-actions__upload attachments--btn">
+                    <label for="upload-image" class="post-actions__label">
+                      <i class="fa fa-upload" aria-hidden="true"></i>
+                      upload image
+                    </label>
+                  </button>
+                  <input type="file" id="upload-image" accept="image/*" multiple>
+                </div>
+                <div class="post-actions__widget">
+                  <button class="btn post-actions__publish">publish</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
         <!-- Post 1 -->
         <div class="post">
           <div class="card">
-            <div class="car-body">
-              <div class="container">
-                <!-- Author and Options -->
-                <div class="row">
-                  <div class="col-md-8">
-                    <div class="d-flex story">
-                      <img src="Images/anime-pfp.jpg" class="rounded-circle" height="40" alt="Avatar">
-                      <div class="mt-2">
-                        <strong class="mt-5 ms-2">Ahmad</strong>
-                      </div>
+            <div class="container">
+              <!-- Author and Options -->
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="d-flex story">
+                    <img src="Images/anime-pfp.jpg" class="rounded-circle" height="40" alt="Avatar">
+                    <div class="mt-2">
+                      <strong class="mt-5 ms-2">Ahmad</strong>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <i class="fas fa-ellipsis-h fa-lf mt-2 float-end"></i>
+                </div>
+                <div class="col-md-4">
+                  <i class="fas fa-ellipsis-h fa-lf mt-2 float-end"></i>
+                </div>
+              </div>
+
+            </div>
+            <br>
+            <!-- Content -->
+            <div class="bg-image hover-overlay ripple shadow-1-strong rounded-0" data-mdb-ripple-color="light">
+              <img src="Images/anime-gun.webp" style="width: 100%;" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+              </a>
+            </div>
+
+            <!-- User Interactions -->
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <i class="far fa-heart fa-lg ms-0"></i>
+                    <i class="far fa-comment fa-lg mx-2"></i>
+                    <i class="fas fa-share fa-lg"></i>
                   </div>
                 </div>
 
-              </div>
-              <br>
-              <!-- Content -->
-              <div class="bg-image hover-overlay ripple shadow-1-strong rounded-0" data-mdb-ripple-color="light">
-                <img src="Images/anime-gun.webp" style="width: 100%;" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                </a>
-              </div>
-
-              <!-- User Interactions -->
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <i class="far fa-heart fa-lg ms-0"></i>
-                      <i class="far fa-comment fa-lg mx-2"></i>
-                      <i class="fas fa-share fa-lg"></i>
-                    </div>
+                <!-- Liked By -->
+                <div class="row">
+                  <div class="col-md-8 mt-1">
+                    <img src="Images/anime-pfp.jpg" class="rounded-circle" height="20" alt="Avatar">
+                    <small>Liked by <strong>Hasnat</strong> and <strong>100</strong> others</small>
                   </div>
+                </div>
 
-                  <!-- Liked By -->
-                  <div class="row">
-                    <div class="col-md-8 mt-1">
-                      <img src="Images/anime-pfp.jpg" class="rounded-circle" height="20" alt="Avatar">
-                      <small>Liked by <strong>Hasnat</strong> and <strong>100</strong> others</small>
-                    </div>
+                <!-- Description -->
+                <div class="row">
+                  <div class="col-md-12 mt-1">
+                    <p>
+                      <strong>
+                        Ahmad
+                      </strong>
+                      Some text about the picture shared or your story. Anything the user types would be shown here so
+                      that the player can share their experience and tell the world
+                      about their story. Some text about the picture shared or your... <small class="my-1">
+                        more</small>
+                    </p>
                   </div>
+                </div>
 
-                  <!-- Description -->
-                  <div class="row">
-                    <div class="col-md-12 mt-1">
-                      <p>
-                        <strong>
-                          Ahmad
-                        </strong>
-                        Some text about the picture shared or your story. Anything the user types would be shown here so
-                        that the player can share their experience and tell the world
-                        about their story. Some text about the picture shared or your... <small class="my-1">
-                          more</small>
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Comments -->
-                  <div class="row">
-                    <small class="my-1">View All Comments</small>
-                    <p class="mb-0"><strong>Hasnat</strong> Wow...great picture loser. Git
-                      Goooodd...HAHAHAAHH</p>
-                    <p class="mb-0"><strong>PussySlayer69</strong> I fucked ur mum last night lad
-                      while u were getting wrecked in league</p>
-                    <small class="my-1">10 Hours Ago</small>
-                  </div>
+                <!-- Comments -->
+                <div class="row">
+                  <small class="my-1">View All Comments</small>
+                  <p class="mb-0"><strong>Hasnat</strong> Wow...great picture loser. Git
+                    Goooodd...HAHAHAAHH</p>
+                  <p class="mb-0"><strong>PussySlayer69</strong> I fucked ur mum last night lad
+                    while u were getting wrecked in league</p>
+                  <small class="my-1">10 Hours Ago</small>
                 </div>
               </div>
             </div>

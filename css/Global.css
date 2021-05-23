@@ -1,6 +1,6 @@
 :root {
-  --primary: #27283a;
-  --secondary: #2d2f3b;
+  --primary: rgb(39, 40, 58);
+  --secondary: rgb(45, 47, 59);
   --purples:rgb(148, 0, 141);
   --background: rgb(34, 38, 46);
   --background-2: rgb(46, 53, 66);
@@ -28,15 +28,17 @@ a:hover{
 *:hover {
   transition: all 0.2s ease;
 }
-
 .card{
   background-color:var(--background-2);
   box-shadow:var(--shadow-1);
   border:none;
+}
+
+.cardSpecial{
   top:0px;
 }
 
-.card:hover{
+.cardSpecial:hover{
   top:-10px;
   box-shadow: var(--shadow-1-hover);
 }
@@ -119,6 +121,10 @@ a:hover{
 
 .dropdown:hover .dropbtn {
   background-color: transparent;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--text-color);
 }
 
 div.rainbow{
@@ -264,5 +270,15 @@ div.rainbow{
 @media (min-width: 200px) and (max-width:600px){
   h1{
     font-size:35px;
+  }
+}
+
+
+@media (min-width: 200px) and (max-width: 500px) {
+  div.banner{
+    font-size:12px;
+  }
+  .StickySection {
+    position: relative;
   }
 }
