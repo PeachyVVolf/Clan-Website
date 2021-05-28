@@ -6,10 +6,10 @@
   left: 0;
   /* background-color: rgb(122, 215, 243); */
   background-image: url("../Images/anime-gun-dark.jpg");
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 100;
 }
 .card-body{
   padding:10px 0px;

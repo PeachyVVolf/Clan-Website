@@ -8,11 +8,13 @@
     border-bottom: 2px solid grey!important; 
 }
 .bracketsButton{
-    background-color:#313131;
+    background-color: #fdf008;
     padding:10px 0px;
     width:100%!important;
     text-align: center;
+    color: #002429;
 }
 .bracketsButton:hover{
     background-color:#1d1d1d;
+    color: wheat;
 }
